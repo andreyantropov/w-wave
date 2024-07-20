@@ -1127,3 +1127,33 @@ body {
 .long-wave-decoration {
   background-image: url('../img/long-wave.svg');
 }
+
+.to-top {
+  position: fixed;
+  right: 50px;
+  bottom: 30px;
+  display: none;
+  padding: 15px 18px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: border 0.3s, background-color 0.3s;
+}
+
+.to-top:focus {
+  border: 2px solid var(--primary-dark-color);
+  background-color: var(--primary-light-color);
+}
+
+@media (any-hover: hover) {
+  .to-top:hover {
+    border: 2px solid var(--primary-light-color);
+    background-color: var(--primary-light-color);
+  }
+}
+
+.to-top:active {
+  border: 2px solid var(--primary-dark-color);
+  background-color: var(--primary-dark-color);
+}
